@@ -8,9 +8,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #3E2723; /* Cokelat tua */
-    color: #FFFFFF; /* Warna teks putih untuk kontras */
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* Putih */
+    color: #333333; /* Warna teks utama */
     line-height: 1.6;
     padding: 20px;
 }
@@ -18,47 +18,53 @@ body {
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #5D4037; /* Cokelat sedang */
+    background-color: #E1BEE7; /* Light Purple */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cv-header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #8D6E63;
+    border-bottom: 2px solid #CE93D8; /* Slightly darker purple */
     padding-bottom: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .profile-photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #8D6E63;
+    border: 4px solid #CE93D8;
     object-fit: cover;
     margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 250px;
 }
 
 .profile-info h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #FFEB3B; /* Aksen warna kuning emas */
+    color: #6A1B9A; /* Dark Purple */
 }
 
 .profile-info p {
     margin-bottom: 8px;
     font-size: 1.1em;
+    color: #4A148C; /* Darker Purple */
 }
 
 .summary {
     margin-top: 10px;
     font-style: italic;
-    color: #D7CCC8;
+    color: #6D4C41; /* Dark Brown for contrast */
 }
 
-/* Perbarui contact-info menjadi dua kolom */
 .contact-info {
     display: flex;
     gap: 20px;
@@ -70,29 +76,38 @@ body {
     padding: 10px;
     border-radius: 5px;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .contact-item.email {
-    background-color: #6D4C41; /* Cokelat lebih terang untuk email */
+    background-color: #AB47BC; /* Medium Purple for Email */
 }
 
 .contact-item.whatsapp {
-    background-color: #4E342E; /* Cokelat lebih gelap untuk WhatsApp */
+    background-color: #8E24AA; /* Medium-Dark Purple for WhatsApp */
 }
 
 .contact-item p {
     margin-bottom: 5px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item p i {
+    margin-right: 5px;
 }
 
 .contact-item a {
-    color: #FFEB3B;
+    color: #FFD700; /* Gold for links */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-item a:hover {
-    color: #FFD54F;
+    color: #FFA500; /* Orange on hover */
 }
 
 section {
@@ -102,9 +117,9 @@ section {
 section h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    border-bottom: 1px solid #8D6E63;
+    border-bottom: 1px solid #CE93D8;
     padding-bottom: 5px;
-    color: #FFEB3B;
+    color: #6A1B9A;
 }
 
 section ul {
@@ -114,15 +129,15 @@ section ul {
 
 section p {
     margin-bottom: 10px;
-    color: #FFECB3;
+    color: #555555;
 }
 
 .cv-footer {
     text-align: center;
-    border-top: 2px solid #8D6E63;
+    border-top: 2px solid #CE93D8;
     padding-top: 10px;
     margin-top: 20px;
-    color: #D7CCC8;
+    color: #6D4C41;
     font-size: 0.9em;
 }
 
@@ -145,5 +160,12 @@ section p {
     /* Atur contact-info menjadi vertikal pada layar kecil */
     .contact-info {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-item {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }
