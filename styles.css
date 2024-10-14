@@ -1,39 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Leoni Ananda Listiani</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="cv-container">
-        <header class="cv-header">
-            <div class="profile-photo">
-                <img src="pp.jpg" alt="Foto Anda">
-            </div>
-            <div class="profile-info">
-                <h1>Leoni Ananda Listiani</h1>
-                <p>S1 Teknologi Informasi</p>
-                <p class="summary">Individu yang berdedikasi tinggi, cepat beradaptasi, dan bersemangat dalam belajar hal-hal baru. Menguasai keterampilan IT dan memiliki kemampuan komunikasi yang baik, baik dalam bekerja secara individu maupun dalam tim.</p>
-                <div class="contact-info">
-                    <div class="contact-item email">
-                        <p>Email:</p>
-                        <a href="mailto:leonianandalistiani@gmail.com">leonianandalistiani@gmail.com</a>
-                    </div>
-                    <div class="contact-item whatsapp">
-                        <p>WhatsApp:</p>
-                        <a href="https://wa.me/6289505130029">+6289505130029</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+/* styles.css */
 
-        <!-- ... bagian lainnya tetap sama ... -->
+/* Reset beberapa default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <footer class="cv-footer">
-            <p>&copy; 2024 Leoni Ananda Listiani</p>
-        </footer>
-    </div>
-</body>
-</html>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3E2723; /* Cokelat tua */
+    color: #FFFFFF; /* Warna teks putih untuk kontras */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #5D4037; /* Cokelat sedang */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cv-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #8D6E63;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #8D6E63;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #FFEB3B; /* Aksen warna kuning emas */
+}
+
+.profile-info p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.summary {
+    margin-top: 10px;
+    font-style: italic;
+    color: #D7CCC8;
+}
+
+/* Perbarui contact-info menjadi dua kolom */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.contact-item.email {
+    background-color: #6D4C41; /* Cokelat lebih terang untuk email */
+}
+
+.contact-item.whatsapp {
+    background-color: #4E342E; /* Cokelat lebih gelap untuk WhatsApp */
+}
+
+.contact-item p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-item a {
+    color: #FFEB3B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #FFD54F;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8D6E63;
+    padding-bottom: 5px;
+    color: #FFEB3B;
+}
+
+section ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+section p {
+    margin-bottom: 10px;
+    color: #FFECB3;
+}
+
+.cv-footer {
+    text-align: center;
+    border-top: 2px solid #8D6E63;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: #D7CCC8;
+    font-size: 0.9em;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .cv-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo img {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .profile-info h1 {
+        text-align: center;
+    }
+
+    /* Atur contact-info menjadi vertikal pada layar kecil */
+    .contact-info {
+        flex-direction: column;
+    }
+}
