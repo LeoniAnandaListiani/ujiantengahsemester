@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
-    color: #3b2f2f; 
+    color: #3b2f2f; /* Warna cokelat tua */
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ body {
 .profile-info h1 {
     margin: 0;
     font-size: 24px;
-    color: #3b2f2f; 
+    color: #3b2f2f; /* Warna cokelat tua */
 }
 
 .profile-info .summary {
@@ -58,14 +58,14 @@ section {
 
 section h2 {
     font-size: 20px;
-    color: #3b2f2f; 
+    color: #3b2f2f; /* Warna cokelat tua */
     margin-bottom: 10px;
 }
 
 footer.cv-footer {
     text-align: center;
     font-size: 14px;
-    color: #3b2f2f; 
+    color: #3b2f2f; /* Warna cokelat tua */
     border-top: 1px solid #e0e0e0;
     padding-top: 10px;
     margin-top: 20px;
