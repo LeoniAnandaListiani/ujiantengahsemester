@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #f5e8d0, #e8d4b0); /* Gradasi warna cokelat muda dan krem */
+    background: linear-gradient(to bottom right, #d2b48c, #f5deb3); /* Gradasi warna cokelat muda ke krem */
     color: #3b2f2f; /* Warna cokelat tua */
     margin: 0;
     padding: 0;
+    height: 100vh; /* Pastikan latar belakang mencakup seluruh tinggi halaman */
 }
 
 .cv-container {
@@ -14,6 +15,8 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px; /* Sudut membulat */
     border: 1px solid #3b2f2f; /* Bingkai cokelat tua */
+    position: relative;
+    z-index: 1; /* Pastikan di atas latar belakang */
 }
 
 .cv-header {
@@ -85,4 +88,6 @@ footer.cv-footer {
     margin-top: 20px;
     background-color: #f5e8d0; /* Latar belakang krem */
     border-radius: 0 0 10px 10px; /* Sudut bawah membulat */
+    position: relative;
+    z-index: 1; /* Pastikan di atas latar belakang */
 }
