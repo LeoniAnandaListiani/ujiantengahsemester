@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f5f5f5; /* Warna latar belakang cokelat muda */
     color: #3b2f2f; /* Warna cokelat tua */
     margin: 0;
     padding: 0;
@@ -12,12 +12,13 @@ body {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3b2f2f; /* Bingkai cokelat tua */
 }
 
 .cv-header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #3b2f2f; /* Warna cokelat tua */
+    border-bottom: 2px solid #3b2f2f; /* Garis bawah cokelat tua */
     padding-bottom: 15px;
 }
 
@@ -60,13 +61,20 @@ section h2 {
     font-size: 20px;
     color: #3b2f2f; /* Warna cokelat tua */
     margin-bottom: 10px;
+    border-bottom: 1px solid #b8860b; /* Garis bawah cokelat keemasan */
+    padding-bottom: 5px;
+}
+
+ul li {
+    margin-bottom: 5px;
 }
 
 footer.cv-footer {
     text-align: center;
     font-size: 14px;
     color: #3b2f2f; /* Warna cokelat tua */
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid #b8860b; /* Garis atas cokelat keemasan */
     padding-top: 10px;
     margin-top: 20px;
+    background-color: #f5f5f5; /* Latar belakang cokelat muda */
 }
