@@ -1,4 +1,7 @@
- {
+/* styles.css */
+
+/* Reset beberapa default browser */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,8 +9,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
-    color: #333333;
+    background-color: #FFFFFF; /* Putih */
+    color: #333333; /* Warna teks utama */
     line-height: 1.6;
     padding: 20px;
 }
@@ -15,7 +18,7 @@ body {
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #E1BEE7; 
+    background-color: #E1BEE7; /* Light Purple */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -24,7 +27,7 @@ body {
 .cv-header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #CE93D8; 
+    border-bottom: 2px solid #CE93D8; /* Slightly darker purple */
     padding-bottom: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
@@ -47,18 +50,19 @@ body {
 .profile-info h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #6A1B9A;
+    color: #6A1B9A; /* Dark Purple */
 }
 
 .profile-info p {
     margin-bottom: 8px;
     font-size: 1.1em;
-    color: #4A148C; 
+    color: #4A148C; /* Darker Purple */
+}
 
 .summary {
     margin-top: 10px;
     font-style: italic;
-    color: #6D4C41;
+    color: #6D4C41; /* Dark Brown for contrast */
 }
 
 .contact-info {
@@ -78,11 +82,11 @@ body {
 }
 
 .contact-item.email {
-    background-color: #AB47BC; 
+    background-color: #AB47BC; /* Medium Purple for Email */
 }
 
 .contact-item.whatsapp {
-    background-color: #8E24AA; 
+    background-color: #8E24AA; /* Medium-Dark Purple for WhatsApp */
 }
 
 .contact-item p {
@@ -97,13 +101,13 @@ body {
 }
 
 .contact-item a {
-    color: #FFD700; 
+    color: #FFD700; /* Gold for links */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-item a:hover {
-    color: #FFA500; 
+    color: #FFA500; /* Orange on hover */
 }
 
 section {
@@ -137,6 +141,7 @@ section p {
     font-size: 0.9em;
 }
 
+/* Responsif */
 @media (max-width: 600px) {
     .cv-header {
         flex-direction: column;
@@ -152,6 +157,7 @@ section p {
         text-align: center;
     }
 
+    /* Atur contact-info menjadi vertikal pada layar kecil */
     .contact-info {
         flex-direction: column;
         width: 100%;
