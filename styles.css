@@ -97,13 +97,13 @@ body {
 }
 
 .contact-item a {
-    color: #FFD700; /* Gold for links */
+    color: #FFD700; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-item a:hover {
-    color: #FFA500; /* Orange on hover */
+    color: #FFA500; 
 }
 
 section {
