@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Reset beberapa default browser */
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF; /* Putih */
-    color: #333333; /* Warna teks utama */
+    background-color: #FFFFFF;
+    color: #333333;
     line-height: 1.6;
     padding: 20px;
 }
@@ -18,7 +16,7 @@ body {
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #E1BEE7; /* Light Purple */
+    background-color: #E1BEE7; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -27,7 +25,7 @@ body {
 .cv-header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #CE93D8; /* Slightly darker purple */
+    border-bottom: 2px solid #CE93D8; 
     padding-bottom: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
@@ -50,19 +48,18 @@ body {
 .profile-info h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #6A1B9A; /* Dark Purple */
+    color: #6A1B9A;
 }
 
 .profile-info p {
     margin-bottom: 8px;
     font-size: 1.1em;
-    color: #4A148C; /* Darker Purple */
-}
+    color: #4A148C; 
 
 .summary {
     margin-top: 10px;
     font-style: italic;
-    color: #6D4C41; /* Dark Brown for contrast */
+    color: #6D4C41;
 }
 
 .contact-info {
@@ -82,11 +79,11 @@ body {
 }
 
 .contact-item.email {
-    background-color: #AB47BC; /* Medium Purple for Email */
+    background-color: #AB47BC; 
 }
 
 .contact-item.whatsapp {
-    background-color: #8E24AA; /* Medium-Dark Purple for WhatsApp */
+    background-color: #8E24AA; 
 }
 
 .contact-item p {
@@ -157,7 +154,6 @@ section p {
         text-align: center;
     }
 
-    /* Atur contact-info menjadi vertikal pada layar kecil */
     .contact-info {
         flex-direction: column;
         width: 100%;
