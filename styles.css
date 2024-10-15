@@ -133,13 +133,17 @@ section p {
 }
 
 .cv-footer {
-    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     border-top: 2px solid #CE93D8;
-    padding-top: 10px;
+    padding: 10px 0;
     margin-top: 20px;
     color: #6D4C41;
     font-size: 0.9em;
+    text-align: center;
 }
+
 
 /* Responsif */
 @media (max-width: 600px) {
