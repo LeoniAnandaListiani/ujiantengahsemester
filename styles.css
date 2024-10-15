@@ -137,7 +137,6 @@ section p {
     font-size: 0.9em;
 }
 
-/* Responsif */
 @media (max-width: 600px) {
     .cv-header {
         flex-direction: column;
